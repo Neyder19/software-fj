@@ -1,0 +1,101 @@
+2026-11-22 05:23:35 | INFO     | main         | ===== INICIO DE LA SIMULACIÓN SOFTWARE FJ =====
+2026-11-22 05:23:35 | INFO     | entidades    | Cliente creado: CLI-001 (Ana Torres)
+2026-11-22 05:23:35 | INFO     | gestor       | Operación 01: Registrar cliente VÁLIDO (Ana Torres) -> OK
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 01: Registrar cliente VÁLIDO (Ana Torres)
+2026-11-22 05:23:35 | INFO     | entidades    | Cliente creado: CLI-002 (Luis Pérez)
+2026-11-22 05:23:35 | INFO     | gestor       | Operación 02: Registrar cliente VÁLIDO (Luis Pérez) -> OK
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 02: Registrar cliente VÁLIDO (Luis Pérez)
+2026-11-22 05:23:35 | ERROR    | gestor       | Operación 03: Cliente INVÁLIDO: correo sin dominio -> [FJ-101] Correo inválido: 'carlos@'.
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 03: Cliente INVÁLIDO: correo sin dominio
+2026-11-22 05:23:35 | ERROR    | gestor       | Operación 04: Cliente INVÁLIDO: documento con letras -> [FJ-101] Documento inválido: 'ABC123' (6 a 12 dígitos).
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 04: Cliente INVÁLIDO: documento con letras
+2026-11-22 05:23:35 | ERROR    | gestor       | Operación 05: Cliente DUPLICADO (mismo documento de Ana) -> [FJ-101] Ya existe un cliente con documento 1012345678.
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 05: Cliente DUPLICADO (mismo documento de Ana)
+2026-11-22 05:23:35 | ERROR    | gestor       | Operación 06: Cliente con parámetro FALTANTE (sin teléfono) -> [FJ-301] El campo 'teléfono' es obligatorio.
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 06: Cliente con parámetro FALTANTE (sin teléfono)
+2026-11-22 05:23:35 | INFO     | gestor       | Servicio registrado: SRV-001
+2026-11-22 05:23:35 | INFO     | gestor       | Operación 07: Crear 3 servicios VÁLIDOS (sala, equipo, asesoría) -> OK
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 07: Crear 3 servicios VÁLIDOS (sala, equipo, asesoría)
+2026-11-22 05:23:35 | INFO     | gestor       | Servicio registrado: SRV-002
+2026-11-22 05:23:35 | INFO     | gestor       | Operación 07: Crear 3 servicios VÁLIDOS (sala, equipo, asesoría) -> OK
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 07: Crear 3 servicios VÁLIDOS (sala, equipo, asesoría)
+2026-11-22 05:23:35 | INFO     | gestor       | Servicio registrado: SRV-003
+2026-11-22 05:23:35 | INFO     | gestor       | Operación 07: Crear 3 servicios VÁLIDOS (sala, equipo, asesoría) -> OK
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 07: Crear 3 servicios VÁLIDOS (sala, equipo, asesoría)
+2026-11-22 05:23:35 | ERROR    | gestor       | Operación 08: Servicio INVÁLIDO: tarifa negativa -> [FJ-201] Tarifa inválida: -500 (debe ser un número > 0).
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 08: Servicio INVÁLIDO: tarifa negativa
+2026-11-22 05:23:35 | ERROR    | gestor       | Operación 09: Servicio INVÁLIDO: stock cero -> [FJ-201] Stock inválido: 0 (entero > 0).
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 09: Servicio INVÁLIDO: stock cero
+2026-11-22 05:23:35 | INFO     | reserva      | Reserva RES-001 creada (cliente=CLI-001, servicio=SRV-001)
+2026-11-22 05:23:35 | INFO     | gestor       | Operación 10: Reserva EXITOSA de sala (3 h, 6 asistentes, con IVA) -> OK
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 10: Reserva EXITOSA de sala (3 h, 6 asistentes, con IVA)
+2026-11-22 05:23:35 | INFO     | reserva      | Reserva RES-001 CONFIRMADA por $285,600.00
+2026-11-22 05:23:35 | DEBUG    | reserva      | Fin de procesar(RES-001). Estado actual: Confirmada
+2026-11-22 05:23:35 | INFO     | gestor       | Procesar Operación 10: Reserva EXITOSA de sala (3 h, 6 asistentes, con IVA) -> OK
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Procesar Operación 10: Reserva EXITOSA de sala (3 h, 6 asistentes, con IVA)
+2026-11-22 05:23:35 | INFO     | reserva      | Reserva RES-002 creada (cliente=CLI-002, servicio=SRV-002)
+2026-11-22 05:23:35 | INFO     | gestor       | Operación 11: Reserva EXITOSA de equipo (8 h, 2 unidades, 10% desc.) -> OK
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 11: Reserva EXITOSA de equipo (8 h, 2 unidades, 10% desc.)
+2026-11-22 05:23:35 | INFO     | reserva      | Reserva RES-002 CONFIRMADA por $269,892.00
+2026-11-22 05:23:35 | DEBUG    | reserva      | Fin de procesar(RES-002). Estado actual: Confirmada
+2026-11-22 05:23:35 | INFO     | gestor       | Procesar Operación 11: Reserva EXITOSA de equipo (8 h, 2 unidades, 10% desc.) -> OK
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Procesar Operación 11: Reserva EXITOSA de equipo (8 h, 2 unidades, 10% desc.)
+2026-11-22 05:23:35 | INFO     | reserva      | Reserva RES-003 creada (cliente=CLI-001, servicio=SRV-003)
+2026-11-22 05:23:35 | INFO     | gestor       | Operación 12: Reserva EXITOSA de asesoría (2 h, nivel senior) -> OK
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 12: Reserva EXITOSA de asesoría (2 h, nivel senior)
+2026-11-22 05:23:35 | INFO     | reserva      | Reserva RES-003 CONFIRMADA por $428,400.00
+2026-11-22 05:23:35 | DEBUG    | reserva      | Fin de procesar(RES-003). Estado actual: Confirmada
+2026-11-22 05:23:35 | INFO     | gestor       | Procesar Operación 12: Reserva EXITOSA de asesoría (2 h, nivel senior) -> OK
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Procesar Operación 12: Reserva EXITOSA de asesoría (2 h, nivel senior)
+2026-11-22 05:23:35 | INFO     | reserva      | Reserva RES-004 creada (cliente=CLI-002, servicio=SRV-001)
+2026-11-22 05:23:35 | INFO     | gestor       | Operación 13: Reserva FALLIDA: asistentes exceden capacidad (25 > 10) -> OK
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 13: Reserva FALLIDA: asistentes exceden capacidad (25 > 10)
+2026-11-22 05:23:35 | DEBUG    | reserva      | Fin de procesar(RES-004). Estado actual: Fallida
+2026-11-22 05:23:35 | ERROR    | gestor       | Procesar Operación 13: Reserva FALLIDA: asistentes exceden capacidad (25 > 10) -> [FJ-401] No se pudo procesar RES-004: 25 asistentes exceden la capacidad (10) de 'Sala Innovación'. | Causa: ServicioInvalidoError("25 asistentes exceden la capacidad (10) de 'Sala Innovación'.")
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Procesar Operación 13: Reserva FALLIDA: asistentes exceden capacidad (25 > 10)
+2026-11-22 05:23:35 | INFO     | reserva      | Reserva RES-005 creada (cliente=CLI-001, servicio=SRV-003)
+2026-11-22 05:23:35 | INFO     | gestor       | Operación 14: Reserva FALLIDA: asesoría sin 'nivel' (parámetro faltante) -> OK
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 14: Reserva FALLIDA: asesoría sin 'nivel' (parámetro faltante)
+2026-11-22 05:23:35 | DEBUG    | reserva      | Fin de procesar(RES-005). Estado actual: Fallida
+2026-11-22 05:23:35 | ERROR    | gestor       | Procesar Operación 14: Reserva FALLIDA: asesoría sin 'nivel' (parámetro faltante) -> [FJ-401] No se pudo procesar RES-005: Falta el 'nivel' del consultor. | Causa: ParametroFaltanteError("Falta el 'nivel' del consultor.")
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Procesar Operación 14: Reserva FALLIDA: asesoría sin 'nivel' (parámetro faltante)
+2026-11-22 05:23:35 | INFO     | servicios    | Servicio SRV-002 disponibilidad -> False
+2026-11-22 05:23:35 | INFO     | reserva      | Reserva RES-006 creada (cliente=CLI-002, servicio=SRV-002)
+2026-11-22 05:23:35 | INFO     | gestor       | Operación 15: Reserva FALLIDA: servicio NO disponible -> OK
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 15: Reserva FALLIDA: servicio NO disponible
+2026-11-22 05:23:35 | DEBUG    | reserva      | Fin de procesar(RES-006). Estado actual: Fallida
+2026-11-22 05:23:35 | ERROR    | gestor       | Procesar Operación 15: Reserva FALLIDA: servicio NO disponible -> [FJ-401] No se pudo procesar RES-006: El servicio SRV-002 'Portátil Pro' no está disponible. | Causa: ServicioNoDisponibleError("El servicio SRV-002 'Portátil Pro' no está disponible.")
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Procesar Operación 15: Reserva FALLIDA: servicio NO disponible
+2026-11-22 05:23:35 | INFO     | servicios    | Servicio SRV-002 disponibilidad -> True
+2026-11-22 05:23:35 | INFO     | reserva      | Reserva RES-007 creada (cliente=CLI-001, servicio=SRV-001)
+2026-11-22 05:23:35 | INFO     | gestor       | Operación 16: Reserva FALLIDA: duración negativa (-3 h) -> OK
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 16: Reserva FALLIDA: duración negativa (-3 h)
+2026-11-22 05:23:35 | DEBUG    | reserva      | Fin de procesar(RES-007). Estado actual: Fallida
+2026-11-22 05:23:35 | ERROR    | gestor       | Procesar Operación 16: Reserva FALLIDA: duración negativa (-3 h) -> [FJ-401] No se pudo procesar RES-007: Duración fuera de rango: -3 h (permitido 1-12 h). | Causa: ServicioInvalidoError('Duración fuera de rango: -3 h (permitido 1-12 h).')
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Procesar Operación 16: Reserva FALLIDA: duración negativa (-3 h)
+2026-11-22 05:23:35 | ERROR    | gestor       | Operación 17: Reserva FALLIDA: cliente None (objeto inválido) -> [FJ-401] Cliente inválido: se recibió NoneType.
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 17: Reserva FALLIDA: cliente None (objeto inválido)
+2026-11-22 05:23:35 | INFO     | reserva      | Reserva RES-008 creada (cliente=CLI-002, servicio=SRV-001)
+2026-11-22 05:23:35 | INFO     | gestor       | Operación 18: Cálculo inconsistente: descuento del 150% -> OK
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 18: Cálculo inconsistente: descuento del 150%
+2026-11-22 05:23:35 | DEBUG    | reserva      | Fin de procesar(RES-008). Estado actual: Fallida
+2026-11-22 05:23:35 | ERROR    | gestor       | Procesar Operación 18: Cálculo inconsistente: descuento del 150% -> [FJ-401] No se pudo procesar RES-008: Descuento inválido: 1.5 (debe estar entre 0 y 1). | Causa: CalculoInconsistenteError('Descuento inválido: 1.5 (debe estar entre 0 y 1).')
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Procesar Operación 18: Cálculo inconsistente: descuento del 150%
+2026-11-22 05:23:35 | INFO     | reserva      | Reserva RES-001 CANCELADA. Motivo: El cliente reprogramó
+2026-11-22 05:23:35 | INFO     | gestor       | Operación 19: Cancelar reserva CONFIRMADA (r1) -> OK
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 19: Cancelar reserva CONFIRMADA (r1)
+2026-11-22 05:23:35 | ERROR    | gestor       | Operación 20: Cancelar de nuevo la misma reserva (operación no permitida) -> [FJ-402] No se puede cancelar RES-001: estado Cancelada.
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 20: Cancelar de nuevo la misma reserva (operación no permitida)
+2026-11-22 05:23:35 | ERROR    | gestor       | Operación 21: Confirmar una reserva ya confirmada (r2) -> [FJ-402] No se puede confirmar RES-002: estado Confirmada.
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 21: Confirmar una reserva ya confirmada (r2)
+2026-11-22 05:23:35 | CRITICAL | gestor       | Operación 22: Error INESPERADO (no del dominio): división por cero -> Error inesperado ZeroDivisionError: division by zero
+Traceback (most recent call last):
+  File "/home/claude/software_fj/gestor.py", line 64, in ejecutar
+    resultado = funcion(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/software_fj/main.py", line 126, in <lambda>
+    g.ejecutar(t, lambda: 1 / 0)
+                          ~~^~~
+ZeroDivisionError: division by zero
+2026-11-22 05:23:35 | DEBUG    | gestor       | Operación finalizada: Operación 22: Error INESPERADO (no del dominio): división por cero
+2026-11-22 05:23:35 | INFO     | main         | ===== FIN DE LA SIMULACIÓN =====
